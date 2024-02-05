@@ -1,0 +1,99 @@
+{
+  "name": "spicyjs",
+  "displayName": "%displayName%",
+  "description": "%description%",
+  "version": "0.0.1",
+  "publisher": "",
+  "license": "MIT",
+  "engines": {
+    "vscode": "0.10.x"
+  },
+  "contributes": {
+    "configurationDefaults": {
+      "[spicyjs]": {
+        "editor.maxTokenizationLineLength": 2500
+      }
+    },
+    "languages": [
+      {
+        "id": "spicyjs",
+        "aliases": [
+          "SpicyJs",
+          "spicyjs",
+          "sjs"
+        ],
+        "extensions": [
+          ".sjs"
+        ],
+        "icon": {
+          "light": "./icons/spicy.png",
+          "dark": "./icons/spicy.png"
+        },
+        "firstLine": "^#!.*\\bnode",
+        "mimetypes": [
+          "text/spicyjs"
+        ],
+        "configuration": "./spicyjs-language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "spicyjs",
+        "scopeName": "source.js",
+        "path": "./syntaxes/SpicyJs.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.tag.attributes.js": "spicyjs",
+          "meta.embedded.expression.js": "spicyjs"
+        },
+        "tokenTypes": {
+          "meta.template.expression": "other",
+          "meta.template.expression string": "string",
+          "meta.template.expression comment": "comment",
+          "entity.name.type.instance.jsdoc": "other",
+          "entity.name.function.tagged-template": "other",
+          "meta.import string.quoted": "other",
+          "variable.other.jsdoc": "other"
+        }
+      },
+      {
+        "scopeName": "source.js.regexp",
+        "path": "./syntaxes/Regular Expressions (SpicyJs).tmLanguage"
+      }
+    ],
+    "semanticTokenScopes": [
+      {
+        "language": "spicyjs",
+        "scopes": {
+          "property": [
+            "variable.other.property.js"
+          ],
+          "property.readonly": [
+            "variable.other.constant.property.js"
+          ],
+          "variable": [
+            "variable.other.readwrite.js"
+          ],
+          "variable.readonly": [
+            "variable.other.constant.object.js"
+          ],
+          "function": [
+            "entity.name.function.js"
+          ],
+          "namespace": [
+            "entity.name.type.module.js"
+          ],
+          "variable.defaultLibrary": [
+            "support.variable.js"
+          ],
+          "function.defaultLibrary": [
+            "support.function.js"
+          ]
+        }
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
