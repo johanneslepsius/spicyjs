@@ -19,12 +19,13 @@ Easy - it's modern JavaScript but with the possibility to use the following keyw
 
 ## Get Started 🦄
 
+- 'npm i -g'
 - 'cd ./vscode/spicyjs'
 - 'vsce package'
 - code --install-extension spicyjs-0.0.1.vsix
 - Create your first .sjs file
 - Code away
-- Run 'node index.js path/to/your/sjsfile'
+- 'spicyjs path/to/your/sjsfile'
 
 ## Contribution 🪲
 
