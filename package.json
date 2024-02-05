@@ -1,0 +1,26 @@
+{
+  "name": "spicyjs",
+  "version": "0.0.1",
+  "description": "Spice up your JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johanneslepsius/spicyjs.git"
+  },
+  "keywords": [
+    "spicyjs",
+    "genz"
+  ],
+  "author": "johannes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johanneslepsius/spicyjs/issues"
+  },
+  "homepage": "https://github.com/johanneslepsius/spicyjs#readme",
+  "bin": {  
+    "spicyjs": "./index.js"  
+  }
+}

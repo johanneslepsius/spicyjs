@@ -1,8 +1,11 @@
+#! /usr/bin/env node
+
 const fs = require('fs');
 const path = require('path');
 
 const translateToJavaScript = (inputFilePath, outputFilePath) => {
   const content = fs.readFileSync(inputFilePath, 'utf-8');
+  console.log('Your code looks buzzin, fr fr. Translating to JavaScript...')
 
   const translatedCode = content
     .replace(/fuckaround(\s\{\n[^]*?\n\s*\}\s*)findout\s\((\S*?)\)(\s\{\n[^]*?\n\s*\})/g, (match, tryBlock, errorVar, catchBlock) => {
