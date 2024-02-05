@@ -17,7 +17,7 @@ Easy - it's modern JavaScript but with the possibility to use the following keyw
 - 'fuckaround...findout' is used just like 'try...catch' and will be transpiled as such, but, well... ✨
 - Have you ever felt the urge to 'yeet' an Error instead of throwing it? You've come to the right place 🤩
 
-## Get Started
+## Get Started 🦄
 
 - 'cd ./vscode/spicyjs'
 - 'vsce package'
@@ -26,7 +26,7 @@ Easy - it's modern JavaScript but with the possibility to use the following keyw
 - Code away
 - Run 'node index.js path/to/your/sjsfile'
 
-## Contribution
+## Contribution 🪲
 
 Feel free to create an issue with improvements or awesome new keywords / features.
 
