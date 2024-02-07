@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/johanneslepsius/spicyjs#readme",
   "bin": {  
-    "spicyjs": "./index.js"  
+    "spicyjs": "./bin/index.js"  
   }
 }
